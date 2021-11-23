@@ -37,7 +37,7 @@
 }
 
 #ver a{
-    color:rgb(8, 8, 8);
+    color:rgb(245, 11, 11);
     font-weight: normal;
     text-decoration: none;
 }
@@ -58,6 +58,22 @@
     text-decoration: none;
 }
 
+#ver2 button{
+    color:rgb(245, 11, 11);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#ver2 button:hover{
+    color:rgb(14, 12, 12);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.dashboard-title-container{
+    margin: 10px;
+}
+
 /* Div local em que aparece a lista de médicos */
 #medicos-container{
     margin: 10px;
@@ -71,8 +87,12 @@
     margin: 10px;
 }
 
-/* Formulario de Cadastro dos médicos */
+/* Formulario de Cadastro de médico */
 #cadastro{
+    margin-bottom: 10px;
+}
+
+#registro{
     margin-bottom: 10px;
 }
 

@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Médicos')
+@section('title', 'Home')
 
 @section('content')
 
@@ -31,13 +31,6 @@
                     <h5 class="card-title"><b>Numero CRM:</b> {{ $medico->CRM }}</h5>
                     <h5 class="card-title"><b>Especialidade:</b> {{ $medico->especialidade }}</h5>
                     <h5 class="card-title"><b>Telefone:</b> {{ $medico->telefone }}</h5>
-                    @auth
-                        @if($permissao == 1)
-                        <hr>
-                        <p id="ver2"><a href="#" >Editar Cadastro</a></p>
-                        <p id="ver2"><a href="#" >Deletar Cadastro</a></p>
-                        @endif
-                    @endauth
                 </div>
             </div>
         @endforeach

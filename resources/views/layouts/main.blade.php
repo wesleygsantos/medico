@@ -38,7 +38,9 @@
                             <b><a href="/login" class="nav-link">Login</a></b>
                         </li>
                         <li class="nav-item">
-                            <b><a href="/register" class="nav-link">Registrar</a></b>
+                            <b><a href="/novousuario/registro" class="nav-link">
+                                Cadastrar Usuário
+                            </a></b>
                         </li>
                         @endguest
 
@@ -47,7 +49,7 @@
                             <b><a href="/novomedico/create" class="nav-link">Cadastrar</a></b>
                         </li>
                         <li class="nav-item">
-                            <b><a href="/dashboard" class="nav-link">Meus Cadastros</a></b>
+                            <b><a href="/dashboard" class="nav-link">Painel de Controle</a></b>
                         </li>
                         <li class="nav-item">
 

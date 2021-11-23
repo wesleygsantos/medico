@@ -18,15 +18,10 @@ use App\Http\Controllers\NovomedicoController;
 Route::get('/', [NovomedicoController::class,'index']);
 Route::get('/novomedico/create', [NovomedicoController::class,'create'])->middleware('auth');
 Route::post('/novomedico', [NovomedicoController::class,'store']);
+Route::delete('/novomedico/{id}',[NovomedicoController::class,'destroy'])->middleware('auth');
+Route::get('/novomedico/edit/{id}',[NovomedicoController::class,'edit'])->middleware('auth');
+Route::put('/novomedico/update/{id}',[NovomedicoController::class,'update'])->middleware('auth');
+Route::get('/novousuario/registro',[NovomedicoController::class,'registro']);
+Route::post('/novousuario', [NovomedicoController::class,'storeUsuario']);
 
-
-Route::get('/areatrabalho/{id?}',function ($id = null) {
-
-    $busca = request('busca');
-
-    return view('areatrabalho', ['id' => $id, 'busca' => $busca]);
-});
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/dashboard',[NovomedicoController::class, 'dashboard'])->middleware('auth');

@@ -7,6 +7,33 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Sobre o Projeto Médicos
+
+- Foi todo feito em Laravel.
+- Banco de dados Mysql: "clinica".
+- Para cadastro de novos médicos a tabela usada foi a "medicos".
+- Para cadastro de novos usuários a tabela usada foi a "users".
+- O site foi feito em seção, possuindo os Menus(Site sem estar logado):
+     "Home", "Login" e "Cadastrar Usuário"
+
+- Menus(com o site logado):
+    "Home", "Castrar", "Painel de Controle" e "Sair"
+
+- Para criar a parte do Login, foi necessário baixar os pacotes Laravel:
+    - 1º Jetstream (via composer)
+    - Baixar Node.js
+    - 2º Livewire (via composer)
+
+- Ao cadastrar Usuário é necessário identificar a permissão do Usuário.
+    Permissão 1 permite o usuário cadastrar, editar e deletar Cadastros dos Médicos.
+    Permissão 2 permite o usuário cadastrar Médicos.
+
+- Na Home a busca é feita pelo Nome do Médico e no Painel de Controle, a busca é 
+    feita pelo CRM do médico.
+
+
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
